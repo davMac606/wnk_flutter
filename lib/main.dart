@@ -1,4 +1,10 @@
+// ignore_for_file: unused_import
+
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
+import 'package:wnk_flutter/counter_page.dart';
+import 'package:wnk_flutter/homepage.dart';
 import 'package:wnk_flutter/welcome.dart';
 import 'package:wnk_flutter/counter.dart';
 import 'package:wnk_flutter/aboutus.dart';
@@ -20,31 +26,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       routes: {
+        '/': (context) => const HomePage(),
         '/welcome': (context) => const WelcomePage(),
         '/aboutus': (context) => const AboutPage(),
+        '/counter': (context) => const CounterPage()
       },
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Menu Principal'),
-          actions: [
-            IconButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, '/');
-                },
-                icon: const Icon(Icons.home_filled)),
-            IconButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, '/welcome');
-                },
-                icon: const Icon(Icons.waving_hand_rounded)),
-            IconButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, '/aboutus');
-                },
-                icon: const Icon(Icons.person_rounded)),
-          ],
-        ),
-      ),
     );
   }
 }

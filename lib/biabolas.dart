@@ -3,11 +3,11 @@
 import 'package:flutter/material.dart';
 
 class Bolinha extends StatelessWidget {
-  Bolinha(this.textinho, this.negrito, this.sombra, {super.key});
+  const Bolinha(this.textinho, {this.negrito = false, this.sombra = false, super.key});
 
-  String textinho;
-  bool negrito = false;
-  bool sombra = true;
+  final String textinho;
+  final bool negrito;
+  final bool sombra;
 
   @override
   Widget build(BuildContext context) {
