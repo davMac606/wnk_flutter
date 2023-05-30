@@ -1,5 +1,5 @@
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:wnk_flutter/biabolas.dart';
 
@@ -34,7 +34,7 @@ class _ContadorState extends State<Contador> {
             ),
           ),
           SizedBox(width: 10),
-          Bolinha("$numero", false, false),
+          Bolinha("$numero"),
           SizedBox(width: 10),
           FloatingActionButton(
             onPressed: () {
