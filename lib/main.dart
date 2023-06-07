@@ -5,6 +5,8 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:wnk_flutter/counter_page.dart';
 import 'package:wnk_flutter/homepage.dart';
+import 'package:wnk_flutter/my_text.dart';
+import 'package:wnk_flutter/text_page.dart';
 import 'package:wnk_flutter/welcome.dart';
 import 'package:wnk_flutter/counter.dart';
 import 'package:wnk_flutter/aboutus.dart';
@@ -29,7 +31,8 @@ class MyApp extends StatelessWidget {
         '/': (context) => const HomePage(),
         '/welcome': (context) => const WelcomePage(),
         '/aboutus': (context) => const AboutPage(),
-        '/counter': (context) => const CounterPage()
+        '/counter': (context) => const CounterPage(),
+        '/my_text': (context) => const TextPage()
       },
     );
   }

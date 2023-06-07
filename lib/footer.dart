@@ -26,6 +26,7 @@ class Footer extends BottomNavigationBar {
               ),
               label: "About Us",
             ),
+            BottomNavigationBarItem(icon: IconButton(onPressed: () => Navigator.pushNamed(context, "/my_text"), icon: const Icon(Icons.textsms_rounded)), label: "My Text"),
             BottomNavigationBarItem(
               icon: IconButton(
                 icon: const Icon(Icons.plus_one),

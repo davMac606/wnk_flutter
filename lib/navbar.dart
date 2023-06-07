@@ -12,6 +12,8 @@ class NavBar extends AppBar {
           IconButton(
               onPressed: () => Navigator.pushNamed(context, "/aboutus"),
               icon: const Icon(Icons.people)),
+              IconButton(onPressed: () => Navigator.pushNamed(context, "/my_text"), 
+              icon: const Icon(Icons.textsms_rounded)),
           IconButton(
               onPressed: () => Navigator.pushNamed(context, "/counter"),
               icon: const Icon(Icons.plus_one))

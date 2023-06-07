@@ -8,10 +8,14 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return PageModel(context, 
+    return PageModel(
+      context,
       title: "Home",
       body: Center(
-        child: Text("Home")
+        child: Text(
+          "Seja bem-vindo ao nosso portfólio!",
+          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+        ),
       ),
     );
   }
